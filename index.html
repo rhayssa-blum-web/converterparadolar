@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter Para Dolar</title>
+</head>
+<body>
+    <input type="checkbox" name="#" id="toggle" class="toggle-btn">
+
+    <label for="toggle" class="toggle-label"></label>
+    
+
+    <h1> Converter Para Dolar</h1>
+    <label for="real"> Real</label>
+    <input type="number" name="" id="real">
+    <br>
+
+    <!-- <label for="dolar">Dolar:</label>
+    <input type="number" name="" id="dolar">
+    <br> -->
+
+    <button onclick="calcularConversao(5.5)">Calcular</button>
+
+    <p> O seu resultado é: <span id="resultado"></span></p>
+
+    <script>
+
+        function calcularConversao() {
+            const real = document.getElementById('real').value;
+            // const dolar = document.getElementById('dolar').value;
+            const imc = real / (real** 0,5);
+            
+            document.getElementById('resultado').textContent = imc.toFixed(1);
+        }
+
+    </script>
+
+<script src="btn.js"></script>
+
+<footer>Desenvolvido Por Rhayssa Blum</footer>
+</body>
+</html>
